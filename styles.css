@@ -1,15 +1,50 @@
 body {
-    width: 100vw;
+    max-width: 100vw;
     margin: 0;
     padding: 0;
 }
 
 #advice-container {
-    border: 1px solid;
-    width: 600px;
+    border: 5px solid;
+    width: 50vw;
     height: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#advice-display {
+    border: 1px solid;
+    margin: 10px;
+    position: relative;
+    top: 30%;
+    transform: rotateY(-50%);
+    text-align: center;
+}
+
+#advice {
+    align-items: center;
+}
+
+.dice {
+    border: 5px solid;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+    width: 50px;
+    padding: 10px;
+    padding-right: 15px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.dice:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+}
+
+#new-advice {
+    height: 55px;
 }
